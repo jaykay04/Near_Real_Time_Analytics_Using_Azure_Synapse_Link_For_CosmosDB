@@ -7,6 +7,8 @@ Azure Synapse Link is a microsoft solution to this problem.
 
 Azure Synapse Link is a cloud native Hybrid Transactional and Analytical Processing (HTAP)  that allows business to run near real time analytics over operational data without impacting the operations of the transactional system.
 
+Azure CosmosDB is a fully managed NoSQL and relational database for modern application development which offers single-digit millisecond response times, automatic and instant scalability coupled with guaranteed speed at any scale.
+
 When we have real time transactional data from IOT devices being generated and written to CosmosDB transactional store, the data is being replicated asynchronously to the analytical store once the Synapse Link is being activated.
 
 The data in the Analytical is in columnar format which makes it very fast to run queries against them by analytical query engines. The replication is carried out by auto sink process fully managed by Azure.
@@ -44,7 +46,13 @@ This device sends heartbeat data every minute to the cosmosdb and central IT sys
 The first step was to create the CosmosDB database with a container to receive the data from the devices and activate *Synapse Link* so that the analytical store can also be created which takes in replicated data from the transactional store.
 <img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/blob/main/Synapse%20Link%20Image/create_cosmosdb.png">
 
-We then create a Link Service in Azure Synapse to enable serverless SQL pool and spark pool have access to the data in cosmosdb.
+We then create a Link Service in Azure Synapse to enable serverless SQL pool and spark pool have access to the data in cosmosdb as shown below respectively.
 <img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/blob/main/Synapse%20Link%20Image/access%20cosmosdb%20data%20from%20serverless.png">
 
 <img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/blob/main/Synapse%20Link%20Image/access%20cosmosdb%20spark%20pool.png">
+
+Now that we can access the analytical store of cosmos db with serverless sql pool and spark pool, it is very easy to create views and perform other complex aggregations by combining it with other dataset.
+
+We can also create spark tables from the spark pool which can be accessed from the serverless sql pool also.
+
+In conclusion, we could see how powerful and easy it is to query data from cosmos db analytical store without having to write complex ETL scripts.
