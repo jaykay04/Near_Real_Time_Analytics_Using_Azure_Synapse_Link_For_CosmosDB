@@ -1,4 +1,4 @@
-# Near_Real_Time_Analytics_Using_Synapse_Link_For_CosmosDB
+# Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB
 This Project demonstrate how Synapse Link can help us simplify Near Real Time Insights from transactional data using *Azure Synapse Analytics*
 
 The major problem faced with moving large amount of data from OLTP databases to OLAP databases is the complex ETL pipeline that needs to be built and the delays that are encountered before being able to run queries on the OLAP databases to make busniess decision.
@@ -39,3 +39,4 @@ This device sends heartbeat data every minute to the cosmosdb and central IT sys
 
 ### Solution Approach
 #### Solution Architecture of the Project
+<img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/tree/main/Synapse%20Link%20Image">
