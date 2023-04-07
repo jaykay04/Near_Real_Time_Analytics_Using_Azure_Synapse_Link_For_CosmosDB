@@ -1,5 +1,5 @@
 # Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB
-This Project demonstrate how Synapse Link can help us simplify Near Real Time Insights from transactional data using *Azure Synapse Analytics*
+This Project demonstrates how Synapse Link can help us simplify Near Real Time Insights from transactional data using *Azure Synapse Analytics*
 
 The major problem faced with moving large amount of data from OLTP databases to OLAP databases is the complex ETL pipeline that needs to be built and the delays that are encountered before being able to run queries on the OLAP databases to make busniess decision.
 
@@ -42,5 +42,9 @@ This device sends heartbeat data every minute to the cosmosdb and central IT sys
 <img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/blob/main/Synapse%20Link%20Image/solution%20architecture.png">
 
 The first step was to create the CosmosDB database with a container to receive the data from the devices and activate *Synapse Link* so that the analytical store can also be created which takes in replicated data from the transactional store.
+<img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/blob/main/Synapse%20Link%20Image/create_cosmosdb.png">
 
 We then create a Link Service in Azure Synapse to enable serverless SQL pool and spark pool have access to the data in cosmosdb.
+<img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/blob/main/Synapse%20Link%20Image/access%20cosmosdb%20data%20from%20serverless.png">
+
+<img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/blob/main/Synapse%20Link%20Image/access%20cosmosdb%20spark%20pool.png">
