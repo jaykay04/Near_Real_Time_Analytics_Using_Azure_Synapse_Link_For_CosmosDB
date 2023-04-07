@@ -40,3 +40,7 @@ This device sends heartbeat data every minute to the cosmosdb and central IT sys
 ### Solution Approach
 #### Solution Architecture of the Project
 <img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/blob/main/Synapse%20Link%20Image/solution%20architecture.png">
+
+The first step was to create the CosmosDB database with a container to receive the data from the devices and activate *Synapse Link* so that the analytical store can also be created which takes in replicated data from the transactional store.
+
+We then create a Link Service in Azure Synapse to enable serverless SQL pool and spark pool have access to the data cosmosdb.
