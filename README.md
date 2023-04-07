@@ -39,4 +39,4 @@ This device sends heartbeat data every minute to the cosmosdb and central IT sys
 
 ### Solution Approach
 #### Solution Architecture of the Project
-<img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/tree/main/Synapse%20Link%20Image">
+<img src="https://github.com/jaykay04/Near_Real_Time_Analytics_Using_Azure_Synapse_Link_For_CosmosDB/blob/main/Synapse%20Link%20Image/solution%20architecture.png">
